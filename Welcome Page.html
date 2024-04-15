@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome Page</title>
+    <script>
+
+        function hide() {
+
+            document.getElementById("advice").style.visibility = "hidden";
+
+            document.getElementById("advice").innerHTML = "";
+
+            document.cookie = "cookie=1";
+
+        }
+
+    </script>
+    <script src="cookies.js"></script>
+    <script>
+        // Función para leer una cookie
+        function leerCookie(nombre) {
+            var nombreCookie = nombre + "=";
+            var cookies = decodeURIComponent(document.cookie).split(';');
+
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.indexOf(nombreCookie) === 0) {
+                    return cookie.substring(nombreCookie.length, cookie.length);
+                }
+            }
+            return null;
+        }
+
+        // Leer el valor de la cookie
+        var valorCookie = leerCookie("miCookie");
+
+        // Mostrar el valor de la cookie en un cuadro de diálogo
+        alert("This place uses cookies.");
+    </script>
+    <style>
+        .titulo {
+            text-align: center;
+            color: darkgoldenrod;
+            font-size: 300%;
+        }
+
+        .contenedor_imagen {
+            display: flex;
+        }
+
+        .imagen {
+            flex: 1;
+            width: 15vw;
+            max-width: 100%;
+            height: auto;
+            margin: 5px;
+        }
+
+        .boton {
+            background-color: white;
+            color: black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body body style="background-color:darkmagenta">
+    
+
+
+    <div class="titulo">
+        <h1>SHIFT</h1>
+    </div>
+
+    <div class="contenedor_imagen">
+        <img src="numero1.jpg" alt="Imagen 1" class="imagen" />
+        <img src="numero2.jpg" alt="Imagen 2" class="imagen" />
+        <img src="numero3.jpg" alt="Imagen 3" class="imagen" />
+    </div>
+    <button class="boton" onclick="window.location.href='HomePage.html'">Home Page</button>
+</body>
+</html>
