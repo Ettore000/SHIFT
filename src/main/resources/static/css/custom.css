@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 100;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Clear float */
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li:first-child {
+    float: left; /* Alinea el primer elemento a la izquierda */
+}
+
+.menu li:not(:first-child) {
+    float: right; /* Alinea los elementos restantes a la derecha */
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    padding: 15px 25px;
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    color: #ffc107;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #007bff;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    align-items: center;
+}
+
+.submenu li a:hover {
+    background-color: #0056b3;
+}
+
+/* burger */
+.dropdown-btn::before {
+    content: "\2630";
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.signup-btn,
+.login-btn,
+.language-btn {
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.signup-btn:hover,
+.login-btn:hover,
+.language-btn:hover {
+    border-color: #ffc107;
+}
+
+.signup-btn:active
+.login-btn:active
+.language-btn:active {
+    border-color: #0056b3;
+}
+  
