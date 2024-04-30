@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>/SHIFT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="authors" content="Ettore Panasia, Maria Lopez, Lidia Sopena, Mario">
+        <meta name="description" content="An UNISANNIO Project of Software Engineering subject ">
+        <meta name="dc.language" content="eng" scheme="RFC1766">
+        <meta name="robots" content="index">
+        <link rel="stylesheet" href="MD3/mdc.button.css">
+        <link rel="stylesheet" href="Color.css">
+        <link rel="stylesheet" href="Design.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="background">
+        <div class="navbar primary-container on-primary-container">
+            <i class="fa fa-bars" onclick="openNav()"></i>
+            <p>/SHIFT</p>
+            <i class="fa fa-user-circle right"></i>
+        </div>
+        <div class="center round primary-container container">
+            
+        </div>
+        <div class="footer border round inverse-surface inverse-on-surface">
+            <p>This website uses technical, analytical and profiling cookies. Technical cookies are necessary for the correct functioning of the site. Analytical cookies allow us to monitor site performance and improve the user experience. Profiling cookies are used to send you personalized advertising. For more information, please see our <a href="CookiesPolicy.html">Cookie Policy</a>. <button onclick="acceptCookies()">Accept all cookies</button></p>
+        </div>
+        <script>
+            function acceptCookies() {
+              // Set or update the cookies
+              //add a preference cookies acceptation
+              alert("Cookie accdpted");
+            }
+        </script>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a onClick="closeNav()">Home</a>
+                <a href="Contacts.html">Contacts</a>
+                <a href="Settings.html">Settings</a>
+                <a href="">Logout</a>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
