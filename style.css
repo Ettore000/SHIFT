@@ -1,0 +1,7 @@
+﻿.busy-date {
+    background-color: #FF6347; /* Color para fechas ocupadas */
+}
+
+.free-date {
+    background-color: #90EE90; /* Color para fechas libres */
+}
