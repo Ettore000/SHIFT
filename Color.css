@@ -13,92 +13,94 @@
 
 
 .secondary {
-    background-color: #CCC2DC;
+    background-color: #625b71;
 }
 .on-secondary {
-    color: #332D41;
+    color: #ffffff;
 }
 .secondary-container {
-    background-color: #4A4458;
+    background-color: #e8def8;
 }
 .on-secondary-container {
-    color: #E8DEF8;
+    color: #e8def8;
 }
 
 
-.terziary {
-    background-color: #EFB8C8;
+.tertiary {
+    background-color: #7d5260;
 }
-.on-terziary {
-    color: #492532;
+.on-tertiary {
+    color: #ffffff;
 }
-.terziary-container {
-    background-color: #633B48;
+.tertiary-container {
+    background-color: #ffd8e4;
 }
-.on-terziary-container {
-    color: #FFD8E4;
+.on-tertiary-container {
+    color: #31111d;
 }
 
 
 .error {
-    background-color: #F2B8B5;
+    background-color: #b3261e;
 }
 .on-error {
-    color: #601410;
+    color: #ffffff;
 }
 .error-container {
-    background-color: #8C1D18;
+    background-color: #f9dedc;
 }
 .on-error-container {
-    color: #F9DEDC;
+    color: #410e0b;
 }
 
 
 .surface {
-    background-color: #141218;
+    background-color: #fef7ff;
 }
-.on-surface {
-    color: #E6E0E9;
+.surface-dim {
+    background-color: #ded8e1;
 }
-.surface-variant {
-    background-color: #49454F;
-}
-.on-surface-variant {
-    color: #CAC4D0;
-}
-.surface-container-highest {
-    background-color: #36343B;
-}
-.surface-container-high {
-    background-color: #2B2930;
-}
-.surface-container {
-    background-color: #211F26;
-}
-.surface-container-low {
-    background-color: #1D1B20;
-}
-.surface-container-lowest {
-    background-color: #0F0D13;
+.surface-bright {
+    background-color: #fef7ff;
 }
 .inverse-surface {
-    background-color: #E6E0E9;
+    background-color: #322f35;
 }
-.inverse-on-surface {
-    color: #322F35;
+.surface-container-lowest {
+    background-color: #ffffff;
 }
-.surface-tint {
-    background-color: #D0BCFF;
+.surface-container {
+    background-color: #f3edf7;
 }
+.surface-container-high {
+    background-color: #ece6f0;
+}
+.surface-container-highest {
+    background-color: #e6e0e9;
+}
+.on-surface {
+    color: #1d1b20;
+}
+.on-surface-variant {
+    color: #49454f;
+}
+
 
 
 .outline {
-    background-color: #938F99;
+    background-color: #79747e;
 }
 .outline-variant {
-    background-color: #49454F;
+    background-color: #cac4d0;
 }
 
+
+.scrim {
+    background-color: #000000;
+}
+.shadow {
+    background-color: #000000;
+}
 
 .neutral {
     background-color: #938F96;
@@ -107,6 +109,6 @@
     background-color: #938F99;
 }
 .background {
-    background-color: #141218;
-    color: white;
+    background-color: #fef7ff;
+    color: black;
 }
