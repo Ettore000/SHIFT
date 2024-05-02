@@ -14,48 +14,41 @@
     </head>
     <body class="background">
         <div class="navbar">
-            <a>/SHIFT</a>
-            <a href="">Settings</a>
-            <a href="" class="right" style="width:auto;">Sign in</a>
+            <a><b>/SHIFT</b></a>
+            <a href="" class="right">Sign in</a>
+            <a href="Settings.html" class="right">Settings</a>
         </div>
-        <div>
-            <div class="round container surface-container-highest">
-                <p>
-                    Una foto dietro leggermente opaca
-                </p>
-                <p>
-                    Muoviti facilmente all'interno della città...
-                </p>
-            </div>
-            <div class="round container surface-container-highest">
-                <p>
-                    Muoviti facilmente all'interno della città...
-                </p>
-            </div>
-            <div class="round container surface-container-highest">
-                <p>
-                    (Spiegazione del servizio)
-                </p>
-                <p>
-                    Offriamo un vasto assortimento di bici...
-                </p>
-            </div>
-            <div class="round container surface-container-highest">
-                <p>
-                    Come funziona?
-                </p>
-                <p>
-                    Perché SHIFT?
-                </p>
-            </div>
-            <div class="round container surface-container-highest">
-                <p>
-                    Piani e tariffe
-                </p>
-            </div>
+        <div class="center-surface round container surface-container-high">
+            <p>
+                (a photo in the background slightly opaque)
+            </p>
+            <p>
+                Move easily within the city...
+            </p>
+        </div>
+        <div class="center-surface round container surface-container-high">
+            <p>
+                (explanation of the service)
+            </p>
+            <p>
+                We offer a wide assortment of bikes...
+            </p>
+        </div>
+        <div class="center-surface round container surface-container-high">
+            <p>
+                How it works?
+            </p>
+            <p>
+                Why SHIFT?
+            </p>
+        </div>
+        <div class="center-surface round container surface-container-high">
+            <p>
+                Plans and rates
+            </p>
         </div>
         <div style="z-index: 1" class="cookie-footer">
-            <p>This website uses technical, analytical and profiling cookies. Technical cookies are necessary for the correct functioning of the site. Analytical cookies allow us to monitor site performance and improve the user experience. Profiling cookies are used to personalize the site interface (light/dark mode, language, etc.). For more information, please see our
+            <p>This website uses <b style="color: red">technical</b>, <b style="color: green">analytical</b> and <b style="color: blue">profiling</b> cookies. <b style="color: red">Technical</b> cookies are necessary for the correct functioning of the site. <b style="color: green">  Analytical</b> cookies allow us to monitor site performance and improve the user experience. <b style="color: blue">Profiling</b> cookies are used to personalize the site interface (light/dark mode, language, etc.). For more information, please see our
                 <a href="CookiesPolicy.html">Cookie Policy</a>.
                 <button onclick="acceptCookies()">
                     Accept all cookies
@@ -67,7 +60,7 @@
             //But we have to demonstrade that we have to accept the cookies before, to the Professor
             function acceptCookies() {
               // Accept the cookies
-              document.cookie = "accepted_cookies=true; expires=" + new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString(); // Scadenza 1 anno
+              document.cookie = "accepted_cookies=true; expires=" + new Date(Date.now() + 60000).toUTCString(); // Expire in one minute
 
               // Hide the footer
               hideFooterCookie();
@@ -88,14 +81,15 @@
         </script>
         <div class="bottom-absolute">
                 <p>
-                    <a href="">Contacts</a> |
-                    <a href="">About us</a> |
-                    <a href="">Services</a> |
-                    <a href="">Where we operate</a> |
-                    <a href="">Locations</a> |
-                    <a href="">Legal informations</a> |
-                    <a href="">Cookies</a>
-                    <p>&copy; 2024 Tutti i diritti riservati.</p>
+                    <p><b>/SHIFT</b></p>
+                    <a href="Contacts.html">Contacts</a> |
+                    <a href="AboutUs.html">About us</a> |
+                    <a href="Services.html">Services</a> |
+                    <a href="Cities.html">Where we operate</a> |
+                    <a href="Locations.html">Locations</a> |
+                    <a href="LegalInformation.html">Legal informations</a> |
+                    <a href="CookiesPolicy.html">Cookies</a>
+                    <p>&copy; 2024 All rights reserved.</p>
                 </p>
             </div>
     </body>
