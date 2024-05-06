@@ -10,6 +10,10 @@ body {
     padding: 50px;
     width: 90%;
 }
+.container-plan {
+    width: 100%;
+    text-align: center;
+}
 .container-selection {
     padding: 10px;
     width: auto;
@@ -22,7 +26,7 @@ body:after {
     width: 100%;
     height: 100%;
     background-image: url('BGimage.jpg');
-    opacity: 0.1;
+    opacity: 0.05;
     z-index: -1;
 }
 
@@ -124,6 +128,13 @@ body:after {
         width: 100%;
     }
 }
+@media screen and (max-width: 700px) {
+    .horizontal {
+        flex-direction: column;
+        float: none;
+        width: 100%;
+    }
+}
 .overlay {
   height: 100%;
   width: 0;
@@ -192,3 +203,40 @@ body:after {
     text-align: center;
     text-decoration: none;
 }
+
+.elevated {
+  /* Proprietà di base del pulsante */
+  color: white; /* Colore del testo */
+  border: none; /* Rimuove il bordo predefinito */
+  padding: 10px 20px; /* Spaziatura interna */
+  cursor: pointer; /* Cursore pointer */
+  transition: box-shadow 0.3s ease; /* Imposta la transizione per l'ombra */
+
+  /* Proprietà di elevazione con ombra */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Crea un'ombra sotto il pulsante */
+}
+
+.elevated:hover {
+  /* Modifica l'ombra quando il mouse è sopra il pulsante */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.unelevated {
+  /* Proprietà di base del pulsante */
+  color: white; /* Colore del testo */
+  border: none; /* Rimuove il bordo predefinito */
+  padding: 10px 20px; /* Spaziatura interna */
+  cursor: pointer; /* Cursore pointer */
+  transition: box-shadow 0.3s ease; /* Imposta la transizione per l'ombra */
+
+  /* Proprietà per rimuovere l'elevazione con ombra */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* Crea un'ombra interna al pulsante */
+  border-radius: 4px; /* Arrotonda gli angoli del pulsante */
+  padding: 12px 22px; /* Aumenta leggermente la spaziatura interna */
+}
+
+.unelevated:hover {
+  /* Rimuove l'ombra anche quando il mouse è sopra il pulsante */
+  box-shadow: inset 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
