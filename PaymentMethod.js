@@ -166,12 +166,12 @@ function onPaymentAuthorized(paymentData) {
           intent: 'PAYMENT_AUTHORIZATION',
           message: 'Insufficient funds',
           reason: 'PAYMENT_DATA_INVALID'
-            // Payment successful! Display message
-            document.getElementById('container').innerHTML = 'Something went wrong with the payment!';
-            // Payment successful! Redirect to another page
-            window.location.href = 'paymentError.html'; // Change 'payment-success.html' to your actual page URL
         }
       });
+      // Payment successful! Display message
+      document.getElementById('container').innerHTML = 'Something went wrong with the payment!';
+      // Payment successful! Redirect to another page
+      window.location.href = 'paymentError.html'; // Change 'payment-success.html' to your actual page URL
     });
 
   });
