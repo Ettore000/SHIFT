@@ -1,0 +1,153 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#form-container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-container {
+    width: 90%; /* Ajuste del ancho del contenedor del calendario */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#calendar-navigation button {
+    margin: 5px;
+}
+
+.calendar-days-row, .calendar-week-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calendar-day, .calendar-date {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 0.8em;
+}
+
+    .calendar-date.today {
+        background-color: #ffeaad;
+    }
+
+    .calendar-date.free {
+        background-color: #b5f7b7;
+    }
+
+    .calendar-date.occupied {
+        background-color: #ffb5b5;
+    }
+
+
+#reservation-form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+    #reservation-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #reservation-form input[type="date"],
+    #reservation-form input[type="text"],
+    #reservation-form select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    #reservation-form button {
+        padding: 8px 15px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        #reservation-form button:hover {
+            background-color: #0056b3;
+        }
+
+.availability-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+    .availability-container h2 {
+        margin-top: 0;
+    }
+
+.hidden {
+    display: none;
+}
+#confirmation-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+    #confirmation-modal.hidden {
+        display: none;
+    }
+
+    /* Estilos para el botón "Go to payment" en el modal */
+    #confirmation-modal #go-to-payment {
+        display: block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        #confirmation-modal #go-to-payment:hover {
+            background-color: #0056b3;
+        }

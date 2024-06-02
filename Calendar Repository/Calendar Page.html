@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--<div class="availability-container">
+        <h2>Availability</h2>
+        <div id="availability"></div>
+    </div>-->
+    <div class="container">
+        <div class="calendar-container">
+            <div id="calendar-navegation">
+                <button id="prev-week">Previous Week</button>
+                <span id="current-week"></span>
+                <button id="next-week">Next Week</button>
+            </div>
+            <div id="calendar"></div>
+        </div>
+        <div class="form-container">
+            <div id="reservation-form">
+                <h3>Reservation</h3>
+                <form id="add-reservation-form">
+                    <label for="reservation-date">Date:</label>
+                    <input type="date" id="reservation-date" required>
+                    <label for="name">Username:</label>
+                    <input type="text" id="name" required>
+                    <label for="bike-type">Type:</label>
+                    <select id="bike-type">
+                        <option value="" disabled selected>Select a type</option>
+                        <option value="Basic">Basic</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Specialized">Specialized</option>
+                        <option value="Kids">Kids</option>
+                    </select>
+                    <label for="bike-model">Bike Model:</label>
+                    <select id="bike-model" required>
+                        <option value="" disabled selected>Select a model</option>
+                    </select>
+                    <button type="submit">Add Reservation</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="confirmation-modal" class="hidden">
+        <div class="modal-content">
+            <p>Your reservation has been successfully made!</p>
+            <button id="go-to-payment" href="pagina_de_pagos.html">Go to payment</button>
+        </div>
+    </div>
+    <!--<script src="script_noapi.js"></script>-->
+    <script src="ReservationRepository.js"></script>
+    <!--<script src="availability.js"></script>-->
+    <script src="calendar.js"></script>
+    <script src="reservation.js"></script>
+</body>
+</html>
