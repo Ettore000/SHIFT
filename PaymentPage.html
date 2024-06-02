@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Payment Successful</title>
+        <title>Payments</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="authors" content="Ettore Panasia, Maria Lopez, Lidia Sopena, Mario">
@@ -15,15 +15,22 @@
     <body class="background">
         <div class="navbar">
             <a><h3>/SHIFT</h3></a>
+            <a href="index.html"><h3>Homepage</h3></a>
             <a href="" class="right"><h3>Profile</h3></a>
             <a href="Settings.html" class="right"><h3>Settings</h3></a>
         </div>
         <div class="center-surface round container surface-container-high">
             <p>
-                <h1>Something went wrong with the payment</h1>
-                <h3>We're sorry, you may be able to resolve this by contacting your bank, requesting more information as to why you cannot process this payment</h3>
-                <p>/SHIFT Team</p>
-                <a href="PaymentPage.html">Try another method</a>
+                <h2>Summary:</h2>
+                <p>SELECTED AREA</p>
+                <p>SELECTED VEHICLE</p>
+                <p>SELECTED DATE</p>
+                <p>SELECTED TIME</p>
+                <div id="container"></div>
+                <script async
+                  src="https://pay.google.com/gp/p/js/pay.js"
+                  onload="onGooglePayLoaded()"></script>
+                <script src="PaymentMethod.js"></script>
             </p>
         </div>
         <div class="bottom-absolute">
@@ -39,5 +46,6 @@
                 <p>&copy; 2024 All rights reserved.</p>
             </p>
         </div>
+    <script src="PaymentSendDB.js"></script>
     </body>
 </html>

@@ -1,33 +1,97 @@
-﻿<!doctype html>
-<!--
- @license
- Copyright 2019 Google LLC. All Rights Reserved.
- SPDX-License-Identifier: Apache-2.0
--->
-<html>
-  <head>
-    <title>Add a Map Web Component with Events</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <!-- jsFiddle will insert css and js -->
-    <link rel="stylesheet" href="MapPage.css">
-  </head>
-  <body>
-    <gmp-map
-      id="Main Map"
-      center="41.13010467947128, 14.782874119386038"
-      zoom="14"
-      map-id="1"
-    >
-      <gmp-advanced-marker
-        position="41.13010467947128, 14.782874119386038"
-        title="Benevento"
-        gmp-clickable
-      ></gmp-advanced-marker>
-    </gmp-map>
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Map</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="authors" content="Ettore Panasia, Maria Lopez, Lidia Sopena, Mario">
+        <meta name="description" content="An UNISANNIO Project of Software Engineering subject ">
+        <meta name="dc.language" content="eng" scheme="RFC1766">
+        <meta name="robots" content="index">
+        <link rel="stylesheet" href="MD3/mdc.button.css">
+        <link rel="stylesheet" href="Color.css">
+        <link rel="stylesheet" href="Design.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <!-- jsFiddle will insert css and js -->
+        <link rel="stylesheet" href="MapPage.css">
+    </head>
+    <body class="background">
+        <div class="navbar">
+            <a><h3>/SHIFT</h3></a>
+            <a href="index.html"><h3>Homepage</h3></a>
+            <a href="" class="right"><h3>Profile</h3></a>
+            <a href="Settings.html" class="right"><h3>Settings</h3></a>
+        </div>
+        <div class="center-surface round container surface-container-high">
+            <p>
+                <gmp-map
+                  id="Main Map"
+                  center="41.133, 14.782874119386038"
+                  zoom="14"
+                  map-id="1"
+                >
+                    <gmp-advanced-marker
+                        position="41.141869854061575, 14.769512563625636"
+                        title="Area A"
+                        gmp-clickable
+                    ></gmp-advanced-marker>
+                    <gmp-advanced-marker
+                        position="41.13067908218655, 14.77756386643357"
+                        title="Area B"
+                        gmp-clickable
+                    ></gmp-advanced-marker>
+                    <gmp-advanced-marker
+                        position="41.1264540713342, 14.790350324103347"
+                        title="Area C"
+                        gmp-clickable
+                    ></gmp-advanced-marker>
+                    <gmp-advanced-marker
+                        position="41.1297155174761, 14.78210448643545"
+                        title="Area D"
+                        gmp-clickable
+                      ></gmp-advanced-marker>
+                </gmp-map>
 
-    <!-- prettier-ignore -->
-    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "", v: "beta"});</script>
-    <script src="MapPage.js"></script>
-  </body>
+                <!-- prettier-ignore -->
+                <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+                    ({key: "AIzaSyByfQ7-ZITqAd7IGUTXFbPwA_ycBkZvL-o", v: "beta"});</script>
+                <script src="MapPage.js"></script>
+            </p>
+            <h1>Pick-up locations:</h1>
+            <p class="border">
+                <h2>Area A</h2>
+                Stazione Benevento
+            </p>
+            <p class="border">
+                <h2>Area B</h2>
+                Piazza Roma
+            </p>
+            <p class="border">
+                <h2>Area C</h2>
+                Viale Antonio Mellusi
+            </p>
+            <p class="border">
+                <h2>Area D</h2>
+                Corso Garibaldi
+            </p>
+        </div>
+        <div class="center-surface round container surface-container-high">
+            <p class="mdc-button--outlined mdc-button mdc-button--raised surface-container-lowest">
+                <a class="mdc-button" href="Calendar Page.html">Go to Calendar</a>
+            </p>
+        </div>
+        <div class="bottom-absolute">
+            <p>
+                <p><b>/SHIFT</b></p>
+                <a href="Contacts.html">Contacts</a> |
+                <a href="AboutUs.html">About us</a> |
+                <a href="Services.html">Services</a> |
+                <a href="Cities.html">Where we operate</a> |
+                <a href="Locations.html">Locations</a> |
+                <a href="LegalInformation.html">Legal informations</a> |
+                <a href="CookiesPolicy.html">Cookies</a>
+                <p>&copy; 2024 All rights reserved.</p>
+            </p>
+        </div>
+    </body>
 </html>

@@ -29,6 +29,7 @@ async function initMap() {
       });
     });
   }
+
 }
 
 initMap();
