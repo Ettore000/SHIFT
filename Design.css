@@ -232,7 +232,6 @@ body:after {
   /* Proprietà per rimuovere l'elevazione con ombra */
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* Crea un'ombra interna al pulsante */
   border-radius: 4px; /* Arrotonda gli angoli del pulsante */
-  padding: 12px 22px; /* Aumenta leggermente la spaziatura interna */
 }
 
 .unelevated:hover {
@@ -240,3 +239,15 @@ body:after {
   box-shadow: inset 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.button {
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
