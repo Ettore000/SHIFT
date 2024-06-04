@@ -193,7 +193,6 @@ svg.mdc-button__icon {
   text-decoration: none;
   /* @alternate */
   -webkit-text-decoration: var(--mdc-typography-button-text-decoration, none);
-          text-decoration: var(--mdc-typography-button-text-decoration, none);
 }
 
 .mdc-button {
@@ -297,12 +296,6 @@ svg.mdc-button__icon {
   }
 }
 .mdc-button {
-  --mdc-ripple-fg-size: 0;
-  --mdc-ripple-left: 0;
-  --mdc-ripple-top: 0;
-  --mdc-ripple-fg-scale: 1;
-  --mdc-ripple-fg-translate-end: 0;
-  --mdc-ripple-fg-translate-start: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   will-change: transform, opacity;
 }
@@ -450,9 +443,6 @@ svg.mdc-button__icon {
   /* @alternate */
   opacity: var(--mdc-text-button-pressed-state-layer-opacity, 0.12);
 }
-.mdc-button.mdc-ripple-upgraded {
-  --mdc-ripple-fg-opacity: var(--mdc-text-button-pressed-state-layer-opacity, 0.12);
-}
 .mdc-button .mdc-button__ripple {
   border-radius: 4px;
   /* @alternate */
@@ -539,9 +529,6 @@ svg.mdc-button__icon {
   /* @alternate */
   opacity: var(--mdc-filled-button-pressed-state-layer-opacity, 0.24);
 }
-.mdc-button--unelevated.mdc-ripple-upgraded {
-  --mdc-ripple-fg-opacity: var(--mdc-filled-button-pressed-state-layer-opacity, 0.24);
-}
 .mdc-button--unelevated .mdc-button__ripple {
   border-radius: 4px;
   /* @alternate */
@@ -570,7 +557,6 @@ svg.mdc-button__icon {
   border-radius: 4px;
   /* @alternate */
   border-radius: var(--mdc-protected-button-container-shape, var(--mdc-shape-small, 4px));
-  --mdc-elevation-box-shadow-for-gss: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   /* @alternate */
   box-shadow: var(--mdc-protected-button-container-elevation, var(--mdc-elevation-box-shadow-for-gss));
@@ -578,8 +564,6 @@ svg.mdc-button__icon {
 /*.mdc-button--raised:not(:disabled) {
   background-color: #6200ee;
   /* @alternate */
-  background-color: var(--mdc-protected-button-container-color, var(--mdc-theme-primary, #6200ee));
-}*/
 .mdc-button--raised:disabled {
   background-color: rgba(0, 0, 0, 0.12);
   /* @alternate */
@@ -632,34 +616,27 @@ svg.mdc-button__icon {
   /* @alternate */
   opacity: var(--mdc-protected-button-pressed-state-layer-opacity, 0.24);
 }
-.mdc-button--raised.mdc-ripple-upgraded {
-  --mdc-ripple-fg-opacity: var(--mdc-protected-button-pressed-state-layer-opacity, 0.24);
-}
 .mdc-button--raised .mdc-button__ripple {
   border-radius: 4px;
   /* @alternate */
   border-radius: var(--mdc-protected-button-container-shape, var(--mdc-shape-small, 4px));
 }
 .mdc-button--raised.mdc-ripple-upgraded--background-focused, .mdc-button--raised:not(.mdc-ripple-upgraded):focus {
-  --mdc-elevation-box-shadow-for-gss: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   /* @alternate */
   box-shadow: var(--mdc-protected-button-focus-container-elevation, var(--mdc-elevation-box-shadow-for-gss));
 }
 .mdc-button--raised:hover {
-  --mdc-elevation-box-shadow-for-gss: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   /* @alternate */
   box-shadow: var(--mdc-protected-button-hover-container-elevation, var(--mdc-elevation-box-shadow-for-gss));
 }
 .mdc-button--raised:not(:disabled):active {
-  --mdc-elevation-box-shadow-for-gss: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
   /* @alternate */
   box-shadow: var(--mdc-protected-button-pressed-container-elevation, var(--mdc-elevation-box-shadow-for-gss));
 }
 .mdc-button--raised:disabled {
-  --mdc-elevation-box-shadow-for-gss: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
   /* @alternate */
   box-shadow: var(--mdc-protected-button-disabled-container-elevation, var(--mdc-elevation-box-shadow-for-gss));
@@ -737,9 +714,6 @@ svg.mdc-button__icon {
   opacity: 0.12;
   /* @alternate */
   opacity: var(--mdc-outlined-button-pressed-state-layer-opacity, 0.12);
-}
-.mdc-button--outlined.mdc-ripple-upgraded {
-  --mdc-ripple-fg-opacity: var(--mdc-outlined-button-pressed-state-layer-opacity, 0.12);
 }
 .mdc-button--outlined .mdc-button__ripple {
   border-radius: 4px;
