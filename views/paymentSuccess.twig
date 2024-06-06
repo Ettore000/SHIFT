@@ -1,0 +1,21 @@
+{% extends "layout.twig" %}
+
+{% block title %} Payment Success {% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/payments.css">
+{% endblock %}
+
+{% block main_container %}
+    <div class="container">
+        <div class="payment-message">
+            <h1>Payment made successfully</h1>
+            <h3>Thank you for ordering our service.</h3>
+            <p>/SHIFT Team</p>
+            <div class="button-container">
+                <button class="custom-button" onclick="location.href='/'">Continue</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "layout.twig" %}
+
+{% block title %} Bicycles {% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/bicycles.css">
+{% endblock %}
+
+{% block main_container %}
+    <h1>CHOOSE THE BEST BIKE FOR YOU</h1>
+    <div class="container">
+        <div class="card">
+            <div class="image-box">
+                <img src="/images/bicycle1.png"/>
+            </div>
+            <div class="content">
+                <h2>RadRover Bike (BASIC)</h2>
+                <p>A basic electric bicycle is a personal transportation means that combines the simplicity of a
+                    conventional bicycle with electric assistance. Ideal for urban commutes and recreational rides.</p>
+                <ul>
+                    <li><strong>Autonomy:</strong> 35 km</li>
+                    <li><strong>Price:</strong> 30 euros per day</li>
+                    <li><strong>Speed:</strong> Up to 25 km/h</li>
+                    <li><strong>Weight:</strong> 20 kg</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="/images/bicycle2.png"/>
+            </div>
+            <div class="content">
+                <h2>Specialized Bike (ADVANCED)</h2>
+                <p>An electric bike designed for exceptional performance and a premium experience.
+                    Equipped with high-quality components, this bike is ideal for both urban commutes and road
+                    adventures.</p>
+                <ul>
+                    <li><strong>Autonomy:</strong> 50 km</li>
+                    <li><strong>Price:</strong> 35 euros per day</li>
+                    <li><strong>Speed:</strong> Up to 30 km/h</li>
+                    <li><strong>Weight:</strong> 26 kg</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="/images/bicycle3.png"/>
+            </div>
+            <div class="content">
+                <h2>TrailBlazer Bike (SPECIAL)</h2>
+                <p>An unconventional bicycle designed for fun and leisure rides. With its oversized wheels and unique
+                    design,
+                    this bike stands out from the crowd and brings joy to riders of all ages. Perfect for cruising
+                    around the neighborhood.</p>
+                <ul>
+                    <li><strong>Autonomy:</strong> 20 km</li>
+                    <li><strong>Price:</strong> 25 euros per day</li>
+                    <li><strong>Speed:</strong> Up to 20 km/h</li>
+                    <li><strong>Weight:</strong> 22 kg</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="/images/bicycle4.png"/>
+            </div>
+            <div class="content">
+                <h2>MiniMover Bike (KIDS)</h2>
+                <p>Bicycle designed specifically for preschool-aged children who are ready to take their first pedals.
+                    With a colorful and fun design, this bicycle provides stability and safety for little ones as they
+                    explore the world around them.</p>
+                <ul>
+                    <li><strong>Autonomy:</strong> 12 km</li>
+                    <li><strong>Price:</strong> 10 euros per day</li>
+                    <li><strong>Speed:</strong> Up to 15 km/h</li>
+                    <li><strong>Weight:</strong> 8 kg</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

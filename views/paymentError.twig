@@ -1,0 +1,22 @@
+{% extends "layout.twig" %}
+
+{% block title %} Payment Error {% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/payments.css">
+{% endblock %}
+
+{% block main_container %}
+    <div class="container">
+        <div class="payment-message">
+            <h1>Something went wrong with the payment</h1>
+            <h3>We're sorry, you may be able to resolve this by contacting your bank,
+                requesting more information as to why you cannot process this payment.</h3>
+            <p>/SHIFT Team</p>
+            <div class="button-container">
+                <button class="custom-button" onclick="location.href='/api/pay'">Retry</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
