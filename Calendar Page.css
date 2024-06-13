@@ -1,0 +1,43 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 20px auto;
+    max-width: 500px;
+}
+.round {
+    border-radius: 30px;
+}
+.elevated {
+  border: none;
+  padding: 10px 20px; /* Spaziatura interna */
+  transition: box-shadow 0.3s ease; /* Imposta la transizione per l'ombra */
+
+  /* Proprietà di elevazione con ombra */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Crea un'ombra sotto il pulsante */
+}
+
+.button {
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:hover {
+  /* Modifica l'ombra quando il mouse è sopra il pulsante */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,53 +1,24 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Page</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css" rel="stylesheet">
-    <script>
-        let events = [];
-
-        function addEvent() {
-                    let eventName = document.getElementById("event-name").value;
-                    let eventDate = document.getElementById("event-date").value;
-
-                    if (eventName !== "" && eventDate !== "") {
-                        events.push({ name: eventName, date: eventDate });
-                        renderEvents();
-                    } else {
-                        alert("Please, add your booking");
-                    }
-        }
-
-        function renderEvents() {
-                    let eventList = document.getElementById("event-list");
-                    eventList.innerHTML = "";
-                    events.forEach(event => {
-                        let li = document.createElement("li");
-                        li.textContent = `${event.name} - ${event.date}`;
-                        eventList.appendChild(li);
-                    });
-        }
-
-    </script>
+  <title>Calendar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="authors" content="Ettore Panasia, Maria Lopez, Lidia Sopena">
+  <meta name="description" content="An UNISANNIO Project of Software Engineering subject ">
+  <link rel="stylesheet" href="Color.css">
+  <link rel="stylesheet" href="Calendar Page.css">
 </head>
-
 <body>
-    <div id="calendar"></div>
-    <input type="text" id="event-title" placeholder="Título del evento">
-    <label for="event-start">Fecha y hora de inicio:</label>
-    <input type="datetime-local" id="event-start">
-    <label for="event-duration">Duración del evento (horas):</label>
-    <input type="number" id="event-duration" min="1" value="1">
-    <button onclick="addEvent()">Añadir Evento</button>
-    <div id="calendar-container">
-        <div id="calendar"></div>
-    </div>
-    <div id="event-list"></div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
-    <script src="script.js"></script>
+  <div class="container center round elevated">
+    <h1>Calendar</h1>
+    <h3>Objects</h3>
+    <p>
+        body    
+    </p>
+    <p>
+        <button class="button">Button</button>
+    </p>
+  </div>
 </body>
 </html>
