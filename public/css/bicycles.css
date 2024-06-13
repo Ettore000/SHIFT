@@ -1,0 +1,93 @@
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p, li {
+    font-size: 20px;
+}
+
+body {
+    background-color: rgba(123, 206, 230, 0.34);
+    background-image: url("../files/bike_back.svg");
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.card {
+    width: 650px;
+    height: 500px;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card .image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: relative;
+}
+
+.card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.4s ease-in-out;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+    filter: grayscale(1) brightness(0.3);
+}
+
+.card:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.card:hover .content {
+    display: block;
+}
+
+.card .content {
+    display: none;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}

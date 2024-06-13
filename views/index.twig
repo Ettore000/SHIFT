@@ -1,0 +1,28 @@
+{% extends "layout.twig" %}
+
+{% block title %} /SHIFT {% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/cookies.css">
+{% endblock %}
+
+{% block main_container %}
+    <div class="background">
+        <div class="overlay-text">
+            <h1>Ride into adventure<br>Your journey starts here</h1>
+        </div>
+    </div>
+
+    <div class="cookies-notice" id="cookies-notice">
+        <img class="cookie" src="/images/cookie.png" alt="Cookie">
+        <h3 class="title">Cookies</h3>
+        <p class="paragraph">We use our own and third-party cookies to improve our services.</p>
+        <button class="button" id="btn-accept-cookies">Accept</button>
+        <a class="link" href="/api/cookies">Cookie Notice</a>
+    </div>
+    <div class="cookies-backdrop" id="cookies-backdrop"></div>
+
+    <script src="js/cookies.js"></script>
+{% endblock %}

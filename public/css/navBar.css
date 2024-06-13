@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 80px;
+    height: 100%;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: #303030;
+}
+
+#menu-drop {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 10;
+}
+
+#menu-drop.visible {
+    transform: translateX(0);
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 28px;
+    padding-left: 28px;
+}
+
+.menu-group {
+    padding: 16px 0;
+    border-block: 1px solid #3f3f3f;
+}
+
+.menu-item {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-item:hover {
+    background-color: #272727;
+}
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar {
+    background-color: #303030;
+    color: white;
+    padding: 18px 0;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu .home {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    display: block;
+}
+
+.menu li:first-child {
+    margin-right: auto;
+}
+
+.menu li:not(:first-child) {
+    margin-right: 30px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    color: #ffc107;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.home-button {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.home-button:hover {
+    color: rgba(255, 255, 255, 0.3);
+    border-bottom: 3px solid white;
+}
+
+.signup-btn, .login-btn,
+.language-btn, .logout-btn {
+    color: white;
+    border: 2px solid white;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.signup-btn:hover,
+.login-btn:hover,
+.logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}

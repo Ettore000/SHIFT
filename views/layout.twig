@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} Shift {% endblock %}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="authors" content="Ettore Panasia, Maria Lopez, Lidia Sopena">
+    <meta name="description" content="An UNISANNIO Project of Software Engineering subject">
+    {% block styles %} {% endblock %}
+</head>
+
+<body>
+    {% if session.user %}
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="home">
+                <aside class="sidebar">
+                    <div class="menu-btn" onclick="toggleMenu()">
+                        <img src="/files/menu.svg" alt="menu">
+                    </div>
+                </aside>
+                <span class="home-button" onclick="window.location.href='/'">SHIFT</span>
+            </li>
+            <li>
+                <button class="language-btn" id="languageDropdown">EN</button>
+            </li>
+            <li>
+                <button class="logout-btn" onclick="window.location.href='/users/logout'">Log out</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="menu-drop">
+        <div class="menu-header">
+            <div class="menu-btn" onclick="toggleMenu()">
+                <img src="/files/menu.svg" alt="menu-icon">
+            </div>
+        </div>
+        <div class="menu-group">
+            <div class="menu-item">
+                <a href="/" class="menu-link">Home</a>
+            </div>
+            <div class="menu-item">
+                <a href="/bookings/calendar" class="menu-link">Rent a bicycle</a>
+            </div>
+            <div class="menu-item">
+                <a href="/api/bicycles" class="menu-link">Services</a>
+            </div>
+            <div class="menu-item">
+                <a href="/api/map" class="menu-link">Locations</a>
+            </div>
+            <div class="menu-item">
+                <a href="/api/contact" class="menu-link">About us</a>
+            </div>
+            <div class="menu-item">
+                <a href="/api/cookies" class="menu-link">Cookies Policy</a>
+            </div>
+           {# <div class="menu-item">
+                <a href="/api/settings" class="menu-link">Settings</a>
+            </div>#}
+        </div>
+    </div>
+    {% else %}
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="home">
+                <aside class="sidebar">
+                    <div class="menu-btn" onclick="toggleMenu()">
+                        <img src="/files/menu.svg" alt="menu">
+                    </div>
+                </aside>
+                <span class="home-button" onclick="window.location.href='/'">SHIFT</span>
+            </li>
+            <li>
+                <button class="language-btn" id="languageDropdown">EN</button>
+            </li>
+            <li>
+                <button class="signup-btn" onclick="window.location.href='/users/signup'">Sign Up</button>
+            </li>
+            <li>
+                <button class="login-btn" onclick="window.location.href='/users/login'">Log in</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="menu-drop">
+        <div class="menu-header">
+            <div class="menu-btn" onclick="toggleMenu()">
+                <img src="/files/menu.svg" alt="menu-icon">
+            </div>
+        </div>
+        <div class="menu-group">
+            <div class="menu-item">
+                <a href="/" class="menu-link">Home</a>
+            </div>
+            <div class="menu-item">
+                <a href="/api/bicycles" class="menu-link">Services</a>
+            </div>
+            <div class="menu-item">
+                <a href="/api/map" class="menu-link">Locations</a>
+            </div>
+            <div class="menu-item">
+                <a href="/api/contact" class="menu-link">About us</a>
+            </div>
+            <div class="menu-item">
+                <a href="/api/cookies" class="menu-link">Cookies Policy</a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <script src="/js/menu.js"></script>
+
+    {% block main_container %} {% endblock %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends "layout.twig" %}
+
+{% block title %} Locations {% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/pay.css">
+{% endblock %}
+
+{% block main_container %}
+    <div class="center-surface round container surface-container-high">
+        <h2>Are you sure to complete the payment?</h2>
+        <div id="container"></div>
+        <script async
+                src="https://pay.google.com/gp/p/js/pay.js"
+                onload="onGooglePayLoaded()"></script>
+        <script src="/js/payment.js"></script>
+        <div id="container">
+            <br><button class="button error on-error" onclick="location.href='/bookings/calendar'">Cancel</button>
+        </div>
+    </div>
+{% endblock %}

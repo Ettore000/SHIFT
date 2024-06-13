@@ -1,0 +1,69 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../files/payment.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+
+.payment-message {
+    background-color: whitesmoke;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    width: 1000px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #6200ea;
+    border: 2px solid #6200ea;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #3700b3;
+    color: #ffffff;
+}
+
+.custom-button:active {
+    background-color: #6200ea;
+    color: #ffffff;
+}
+
+.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.5);
+}

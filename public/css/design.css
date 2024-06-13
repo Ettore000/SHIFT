@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container {
+    padding: 50px;
+    width: 90%;
+}
+.container-plan {
+    width: 100%;
+    text-align: center;
+}
+.container-selection {
+    padding: 10px;
+    width: auto;
+}
+
+.round {
+    border-radius: 30px;
+}
+.border {
+    border: 1px solid black;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center-surface {
+    position: relative;
+    margin: 20px auto;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 200px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .horizontal {
+        flex-direction: column;
+        float: none;
+        width: 100%;
+    }
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.elevated {
+    /* Proprietà di base del pulsante */
+    color: white; /* Colore del testo */
+    border: none; /* Rimuove il bordo predefinito */
+    padding: 10px 20px; /* Spaziatura interna */
+    cursor: pointer; /* Cursore pointer */
+    transition: box-shadow 0.3s ease; /* Imposta la transizione per l'ombra */
+
+    /* Proprietà di elevazione con ombra */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Crea un'ombra sotto il pulsante */
+}
+
+.elevated:hover {
+    /* Modifica l'ombra quando il mouse è sopra il pulsante */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.unelevated {
+    /* Proprietà di base del pulsante */
+    color: white; /* Colore del testo */
+    border: none; /* Rimuove il bordo predefinito */
+    padding: 10px 20px; /* Spaziatura interna */
+    cursor: pointer; /* Cursore pointer */
+    transition: box-shadow 0.3s ease; /* Imposta la transizione per l'ombra */
+
+    /* Proprietà per rimuovere l'elevazione con ombra */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* Crea un'ombra interna al pulsante */
+    border-radius: 4px; /* Arrotonda gli angoli del pulsante */
+}
+
+.unelevated:hover {
+    /* Rimuove l'ombra anche quando il mouse è sopra il pulsante */
+    box-shadow: inset 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}

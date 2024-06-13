@@ -1,0 +1,117 @@
+.primary {
+    background-color: #65558f;
+}
+.on-primary {
+    color: #ffffff;
+}
+.primary-container {
+    background-color: #eaddff;
+}
+.on-primary-container {
+    color: #21005d;
+}
+
+
+.secondary {
+    background-color: #625b71;
+}
+.on-secondary {
+    color: #ffffff;
+}
+.secondary-container {
+    background-color: #e8def8;
+}
+.on-secondary-container {
+    color: #e8def8;
+}
+
+
+.tertiary {
+    background-color: #7d5260;
+}
+.on-tertiary {
+    color: #ffffff;
+}
+.tertiary-container {
+    background-color: #ffd8e4;
+}
+.on-tertiary-container {
+    color: #31111d;
+}
+
+
+.error {
+    background-color: #b3261e;
+}
+.on-error {
+    color: #ffffff;
+}
+.error-container {
+    background-color: #f9dedc;
+}
+.on-error-container {
+    color: #410e0b;
+}
+
+
+.surface {
+    background-color: #fef7ff;
+}
+.surface-dim {
+    background-color: #ded8e1;
+}
+.surface-bright {
+    background-color: #fef7ff;
+}
+.inverse-surface {
+    background-color: #322f35;
+}
+.surface-container-lowest {
+    background-color: #ffffff;
+}
+.surface-container {
+    background-color: #f3edf7;
+}
+.surface-container-high {
+    background-color: #ece6f0;
+}
+.surface-container-highest {
+    background-color: #e6e0e9;
+}
+.on-surface {
+    color: #1d1b20;
+}
+.on-surface-variant {
+    color: #49454f;
+}
+.on-inverse-surface {
+    color: #ffffff;
+}
+
+
+
+.outline {
+    background-color: #79747e;
+}
+.outline-variant {
+    background-color: #cac4d0;
+}
+
+
+.scrim {
+    background-color: #000000;
+}
+.shadow {
+    background-color: #000000;
+}
+
+.neutral {
+    background-color: #938F96;
+}
+.neutral-variant {
+    background-color: #938F99;
+}
+.background {
+    background-color: #fef7ff;
+    color: black;
+}

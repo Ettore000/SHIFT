@@ -1,0 +1,46 @@
+{% extends "layout.twig" %}
+
+{% block title %} Booking Calendar {% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/calendar.css">
+{% endblock %}
+
+{% block main_container %}
+    {% if date %}
+        <h1>Results for date {{ date }}:</h1>
+        {% if availableBicycles %}
+            <ul style="list-style: none;">
+                {% for bike in availableBicycles %}
+                    <li>
+                        <div class="bike-form-container">
+                            <form action="/bookings/reserve" method="post">
+                                <input type="hidden" name="bikeId" value="{{ bike._id }}">
+                                <input type="hidden" name="date" value="{{ date }}">
+                                <p>{{ bike.model }} ({{ bike.type }})</p>
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </form>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>There are no bicycles available for this date...</p>
+        {% endif %}
+        <button class="calen-button" onclick="location.href='/bookings/calendar'">Go back</button>
+    {% else %}
+        <div class="calendar-container">
+            <div class="calendar-form">
+                <h1>Check bicycle availability</h1>
+                <form action="/bookings/calendar" method="get">
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required/>
+                    </div>
+                    <button type="submit">Check</button>
+                </form>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
